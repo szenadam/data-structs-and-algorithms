@@ -10,7 +10,7 @@ void swap(int &x, int &y)
 
 void cat_arr(int arr[], int size)
 {
-  for (size_t i = 0; i < size; i++)
+  for (int i = 0; i < size; i++)
   {
     std::cout << arr[i] << " ";
   }
@@ -19,7 +19,7 @@ void cat_arr(int arr[], int size)
 
 void init_arr(int arr[], int size, int x)
 {
-  for (size_t i = 0; i < size; i++)
+  for (int i = 0; i < size; i++)
   {
     arr[i] = x;
   }

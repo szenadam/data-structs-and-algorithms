@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "g++.exe build files",
+      "command": "C:\\Strawberry\\c\\bin\\g++.exe",
+      "args": [
+        "-g",
+        "${workspaceFolder}\\main.cpp",
+        "${workspaceFolder}\\search.cpp",
+        "${workspaceFolder}\\search.h",
+        "${workspaceFolder}\\utils.cpp",
+        "${workspaceFolder}\\utils.h",
+        "${workspaceFolder}\\sort.cpp",
+        "${workspaceFolder}\\sort.h",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "options": {
+        "cwd": "C:\\Strawberry\\c\\bin"
+      }
+    }
+  ],
+  "version": "2.0.0"
+}
