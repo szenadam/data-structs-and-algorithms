@@ -19,29 +19,27 @@ int linearSearch(int arr[], int size, int x)
 
 int binarySearch(int arr[], int size, int x)
 {
-  return binSearch(arr, 1, size, x);
+  return binSearch(arr, 0, size, x);
 }
 
-int binSearch(int arr[], int u, int v, int x) // TODO Not doing what it's supposed to :-/
+int binSearch(int arr[], int u, int v, int x)
 {
   if (u > v)
   {
     return 0;
   }
-  else
+
+  int m = (u + v) / 2;
+  if (arr[m] > x)
   {
-    int m = (int)(((u + v) / 2) + 0.5);
-    if (arr[m] > x)
-    {
-      return binSearch(arr, u, m - 1, x);
-    }
-    else if (arr[m] < x)
-    {
-      return binSearch(arr, m + 1, v, x);
-    }
-    else
-    {
-      return m;
-    }
+    return binSearch(arr, u, m - 1, x);
+  }
+  else if (arr[m] < x)
+  {
+    return binSearch(arr, m + 1, v, x);
+  }
+  else if (arr[m] == x)
+  {
+    return m;
   }
 }
