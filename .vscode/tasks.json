@@ -13,11 +13,33 @@
         "${workspaceFolder}\\utils.h",
         "${workspaceFolder}\\sort.cpp",
         "${workspaceFolder}\\sort.h",
+        "${workspaceFolder}\\datastructs.h}",
         "-o",
         "${fileDirname}\\${fileBasenameNoExtension}.exe"
       ],
       "options": {
         "cwd": "C:\\Strawberry\\c\\bin"
+      }
+    },
+    {
+      "type": "shell",
+      "label": "Linux build",
+      "command": "/usr/bin/g++",
+      "args": [
+        "-g",
+        "${workspaceFolder}/main.cpp",
+        "${workspaceFolder}/search.cpp",
+        "${workspaceFolder}/search.h",
+        "${workspaceFolder}/utils.cpp",
+        "${workspaceFolder}/utils.h",
+        "${workspaceFolder}/sort.cpp",
+        "${workspaceFolder}/sort.h",
+        "${workspaceFolder}/datastructs.h",
+        "-o",
+        "${workspaceFolder}/main"
+      ],
+      "options": {
+        "cwd": "/usr/bin"
       }
     }
   ],

@@ -2,7 +2,6 @@
 #include "utils.h"
 #include "search.h"
 #include "sort.h"
-#include "datastructs.h"
 
 using namespace std;
 
@@ -12,6 +11,7 @@ int main()
   int orderedArray[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
   int emptyArray[0];
   int arrayWithOneElement[1] = {1};
+  E1* simpleOnewayList = initS1L(unorderedArray, 10);
 
   return 0;
 }
