@@ -8,7 +8,7 @@ void swap(int &x, int &y)
   y = z;
 }
 
-void cat_arr(int arr[], int size)
+void catArr(int arr[], int size)
 {
   for (int i = 0; i < size; i++)
   {
@@ -17,7 +17,7 @@ void cat_arr(int arr[], int size)
   std::cout << std::endl;
 }
 
-void init_arr(int arr[], int size, int x)
+void initArr(int arr[], int size, int x)
 {
   for (int i = 0; i < size; i++)
   {
