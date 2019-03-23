@@ -13,7 +13,7 @@
         "${workspaceFolder}\\utils.h",
         "${workspaceFolder}\\sort.cpp",
         "${workspaceFolder}\\sort.h",
-        "${workspaceFolder}\\datastructs.h}",
+        "${workspaceFolder}\\datastructs.h",
         "-o",
         "${fileDirname}\\${fileBasenameNoExtension}.exe"
       ],

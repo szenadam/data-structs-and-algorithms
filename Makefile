@@ -1,8 +1,15 @@
+
+CPP_FILES=$(wildcard *.cpp)
+HEADER_FILES=$(wildcard *.h)
+
 run: main
 	./main
 
-main: clean
-	g++ -o main main.cpp utils.h utils.cpp sort.h sort.cpp search.h search.cpp datastructs.h
+debug:
+	g++ -g -o main $(CPP_FILES) $(HEADER_FILES)
+
+main:
+	g++ -o main $(CPP_FILES) $(HEADER_FILES)
 
 clean:
 	rm -f main *.gch
